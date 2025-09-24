@@ -1,0 +1,87 @@
+// Defining the Project interface for our portfolio items
+export interface Project {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  category: string;
+  client: string;
+  completionDate: string;
+  technologies: string[];
+  link?: string;
+}
+
+export const projects: Project[] = [
+  {
+    id: 'project-1',
+    title: 'Modern Office Building',
+    description: 'A state-of-the-art office complex featuring sustainable design elements, open workspaces, and cutting-edge technology infrastructure. The building includes energy-efficient systems, green spaces, and collaborative areas designed to enhance productivity and employee well-being.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    category: 'Commercial',
+    client: 'TechCorp International',
+    completionDate: 'June 2023',
+    technologies: ['Sustainable Materials', 'Smart Building Systems', 'Energy Efficient Design'],
+    link: 'https://example.com/project1'
+  },
+  {
+    id: 'project-2',
+    title: 'Luxury Residential Complex',
+    description: 'An exclusive residential development featuring premium apartments with high-end finishes, panoramic views, and resort-style amenities. The complex includes a swimming pool, fitness center, landscaped gardens, and 24-hour security services.',
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    category: 'Residential',
+    client: 'Elite Properties',
+    completionDate: 'March 2023',
+    technologies: ['Premium Materials', 'Smart Home Integration', 'Acoustic Engineering']
+  },
+  {
+    id: 'project-3',
+    title: 'Urban Public Park',
+    description: 'A revitalized urban space transformed into a vibrant public park with walking paths, recreational areas, and native landscaping. The project incorporated sustainable drainage systems, solar lighting, and community-focused design elements.',
+    image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    category: 'Public Space',
+    client: 'City of Greenfield',
+    completionDate: 'September 2022',
+    technologies: ['Sustainable Landscaping', 'Water Conservation', 'Public Space Design']
+  },
+  {
+    id: 'project-4',
+    title: 'Healthcare Facility Expansion',
+    description: 'A major expansion of an existing healthcare facility, adding new patient care units, diagnostic centers, and support services. The design prioritized patient comfort, staff efficiency, and integration with the existing structure.',
+    image: 'https://images.unsplash.com/photo-1551190822-a9333d879b1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    category: 'Healthcare',
+    client: 'Regional Medical Center',
+    completionDate: 'December 2022',
+    technologies: ['Medical Facility Design', 'Modular Construction', 'Healing Environment Principles']
+  },
+  {
+    id: 'project-5',
+    title: 'Historic Building Renovation',
+    description: 'Careful restoration and adaptive reuse of a historic building, preserving architectural details while updating systems and spaces for modern use. The project balanced preservation requirements with contemporary functionality needs.',
+    image: 'https://images.unsplash.com/photo-1460472178825-e52465bb9391?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    category: 'Restoration',
+    client: 'Heritage Foundation',
+    completionDate: 'July 2022',
+    technologies: ['Historic Preservation', 'Structural Reinforcement', 'Period-Appropriate Materials']
+  },
+  {
+    id: 'project-6',
+    title: 'Sustainable School Campus',
+    description: 'A new educational campus designed with sustainability at its core, featuring passive solar design, rainwater harvesting, and renewable energy systems. The facilities include flexible learning spaces, outdoor classrooms, and community use areas.',
+    image: 'https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    category: 'Educational',
+    client: 'Progressive School District',
+    completionDate: 'August 2023',
+    technologies: ['Net-Zero Energy Design', 'Biophilic Design Principles', 'Flexible Learning Spaces']
+  }
+];
+
+// Export projects as default as well
+export default projects;
+
+export const getProjectById = (id: string): Project | undefined => {
+  return projects.find(project => project.id === id);
+};
+
+export const getProjectsByCategory = (category: string): Project[] => {
+  return projects.filter(project => project.category === category);
+};

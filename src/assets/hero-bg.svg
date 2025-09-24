@@ -1,0 +1,63 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a2a3a" />
+      <stop offset="100%" stop-color="#0a1520" />
+    </linearGradient>
+    
+    <!-- Building pattern -->
+    <pattern id="building-pattern" patternUnits="userSpaceOnUse" width="200" height="300" patternTransform="scale(1.5) rotate(0)">
+      <rect width="50" height="100" x="0" y="0" fill="#2a3a4a" opacity="0.7" />
+      <rect width="50" height="100" x="50" y="50" fill="#2a3a4a" opacity="0.5" />
+      <rect width="50" height="100" x="100" y="0" fill="#2a3a4a" opacity="0.7" />
+      <rect width="50" height="100" x="150" y="50" fill="#2a3a4a" opacity="0.5" />
+      <rect width="50" height="100" x="0" y="150" fill="#2a3a4a" opacity="0.6" />
+      <rect width="50" height="100" x="50" y="200" fill="#2a3a4a" opacity="0.4" />
+      <rect width="50" height="100" x="100" y="150" fill="#2a3a4a" opacity="0.6" />
+      <rect width="50" height="100" x="150" y="200" fill="#2a3a4a" opacity="0.4" />
+    </pattern>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="1920" height="1080" fill="url(#bg-gradient)" />
+  
+  <!-- City skyline silhouette -->
+  <path d="M0,1080 L0,600 L100,620 L150,580 L200,600 L250,550 L300,570 L350,500 L400,520 L450,480 L500,500 L550,450 L600,470 L650,420 L700,440 L750,400 L800,420 L850,380 L900,400 L950,350 L1000,370 L1050,320 L1100,340 L1150,300 L1200,320 L1250,280 L1300,300 L1350,250 L1400,270 L1450,230 L1500,250 L1550,210 L1600,230 L1650,190 L1700,210 L1750,170 L1800,190 L1850,150 L1900,170 L1920,160 L1920,1080 Z" fill="#152535" opacity="0.8" />
+  
+  <!-- Building pattern overlay -->
+  <rect width="1920" height="1080" fill="url(#building-pattern)" opacity="0.3" />
+  
+  <!-- Construction elements -->
+  <!-- Crane 1 -->
+  <g transform="translate(300, 300) scale(0.8)">
+    <line x1="0" y1="0" x2="0" y2="400" stroke="#e67e22" stroke-width="15" />
+    <line x1="0" y1="50" x2="300" y2="50" stroke="#e67e22" stroke-width="10" />
+    <line x1="300" y1="50" x2="300" y2="80" stroke="#e67e22" stroke-width="8" />
+    <line x1="0" y1="100" x2="50" y2="50" stroke="#e67e22" stroke-width="8" />
+    <line x1="0" y1="150" x2="100" y2="50" stroke="#e67e22" stroke-width="8" />
+    <line x1="0" y1="200" x2="150" y2="50" stroke="#e67e22" stroke-width="8" />
+    <line x1="0" y1="250" x2="200" y2="50" stroke="#e67e22" stroke-width="8" />
+    <line x1="0" y1="300" x2="250" y2="50" stroke="#e67e22" stroke-width="8" />
+  </g>
+  
+  <!-- Crane 2 -->
+  <g transform="translate(1500, 350) scale(0.6) rotate(180)">
+    <line x1="0" y1="0" x2="0" y2="400" stroke="#e67e22" stroke-width="15" />
+    <line x1="0" y1="50" x2="300" y2="50" stroke="#e67e22" stroke-width="10" />
+    <line x1="300" y1="50" x2="300" y2="80" stroke="#e67e22" stroke-width="8" />
+    <line x1="0" y1="100" x2="50" y2="50" stroke="#e67e22" stroke-width="8" />
+    <line x1="0" y1="150" x2="100" y2="50" stroke="#e67e22" stroke-width="8" />
+    <line x1="0" y1="200" x2="150" y2="50" stroke="#e67e22" stroke-width="8" />
+    <line x1="0" y1="250" x2="200" y2="50" stroke="#e67e22" stroke-width="8" />
+    <line x1="0" y1="300" x2="250" y2="50" stroke="#e67e22" stroke-width="8" />
+  </g>
+  
+  <!-- Overlay gradient for text readability -->
+  <rect width="1920" height="1080" fill="url(#bg-gradient)" opacity="0.3" />
+  
+  <!-- Subtle grid pattern -->
+  <path d="M0,0 L1920,0 L1920,1080 L0,1080 Z" fill="none" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.05" stroke-dasharray="50,50" />
+  <path d="M0,0 L1920,1080" fill="none" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.05" />
+  <path d="M1920,0 L0,1080" fill="none" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.05" />
+</svg>

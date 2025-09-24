@@ -1,0 +1,32 @@
+:root {
+  /* Primary Colors from Logo */
+  --primary-orange: #FF6B00; /* Vibrant orange from logo */
+  --primary-black: #000000; /* Deep black from logo */
+  --primary-white: #FFFFFF; /* White from logo */
+
+  /* Secondary Colors */
+  --secondary-orange-light: #FF8A3D; /* Lighter orange for hover states */
+  --secondary-orange-dark: #D95A00; /* Darker orange for active states */
+  --secondary-gray-dark: #333333; /* Dark gray for text */
+  --secondary-gray-medium: #666666; /* Medium gray for secondary text */
+  --secondary-gray-light: #EEEEEE; /* Light gray for backgrounds */
+
+  /* Gradient Colors */
+  --gradient-orange-start: #FF6B00;
+  --gradient-orange-end: #FF8A3D;
+
+  /* Text Colors */
+  --text-dark: var(--secondary-gray-dark);
+  --text-medium: var(--secondary-gray-medium);
+  --text-light: var(--primary-white);
+
+  /* Background Colors */
+  --bg-dark: var(--primary-black);
+  --bg-light: var(--primary-white);
+  --bg-accent: var(--secondary-gray-light);
+
+  /* Border Colors */
+  --border-dark: var(--primary-black);
+  --border-light: var(--secondary-gray-light);
+  --border-accent: var(--primary-orange);
+}

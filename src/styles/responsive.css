@@ -1,0 +1,346 @@
+/* responsive.css - Responsive utilities for STONE EDGE website */
+
+/* Breakpoints
+  xs: 0-575px (mobile phones)
+  sm: 576px-767px (large phones, small tablets)
+  md: 768px-991px (tablets, small laptops)
+  lg: 992px-1199px (desktops, large tablets)
+  xl: 1200px+ (large desktops)
+*/
+
+/* Base Mobile-First Approach */
+:root {
+  --container-padding: 1rem;
+  --section-spacing: 3rem;
+  --grid-gap: 1rem;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive Grid System */
+.grid {
+  display: grid;
+  gap: var(--grid-gap);
+}
+
+/* Default to single column on mobile */
+.grid-cols-1 { grid-template-columns: 1fr; }
+.grid-cols-2 { grid-template-columns: 1fr; }
+.grid-cols-3 { grid-template-columns: 1fr; }
+.grid-cols-4 { grid-template-columns: 1fr; }
+
+/* Responsive Spacing */
+.section {
+  padding-top: var(--section-spacing);
+  padding-bottom: var(--section-spacing);
+}
+
+/* Responsive Typography */
+.responsive-text-sm {
+  font-size: var(--font-size-sm);
+}
+
+.responsive-text-base {
+  font-size: var(--font-size-base);
+}
+
+.responsive-text-lg {
+  font-size: var(--font-size-md); /* Smaller on mobile */
+}
+
+.responsive-text-xl {
+  font-size: var(--font-size-lg); /* Smaller on mobile */
+}
+
+/* Responsive Visibility */
+.hide-xs {
+  display: none;
+}
+
+.show-xs {
+  display: block;
+}
+
+/* Small devices (576px and up) */
+@media (min-width: 576px) {
+  :root {
+    --container-padding: 1.25rem;
+    --section-spacing: 3.5rem;
+    --grid-gap: 1.25rem;
+  }
+  
+  .container {
+    max-width: 540px;
+  }
+  
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .responsive-text-lg {
+    font-size: var(--font-size-md);
+  }
+  
+  .responsive-text-xl {
+    font-size: var(--font-size-lg);
+  }
+  
+  .hide-xs {
+    display: block;
+  }
+  
+  .show-xs {
+    display: none;
+  }
+  
+  .hide-sm {
+    display: none;
+  }
+  
+  .show-sm {
+    display: block;
+  }
+}
+
+/* Medium devices (768px and up) */
+@media (min-width: 768px) {
+  :root {
+    --container-padding: 1.5rem;
+    --section-spacing: 4rem;
+    --grid-gap: 1.5rem;
+  }
+  
+  .container {
+    max-width: 720px;
+  }
+  
+  .grid-cols-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-cols-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .responsive-text-lg {
+    font-size: var(--font-size-lg);
+  }
+  
+  .responsive-text-xl {
+    font-size: var(--font-size-xl);
+  }
+  
+  .hide-sm {
+    display: block;
+  }
+  
+  .show-sm {
+    display: none;
+  }
+  
+  .hide-md {
+    display: none;
+  }
+  
+  .show-md {
+    display: block;
+  }
+}
+
+/* Large devices (992px and up) */
+@media (min-width: 992px) {
+  :root {
+    --container-padding: 1.75rem;
+    --section-spacing: 5rem;
+    --grid-gap: 2rem;
+  }
+  
+  .container {
+    max-width: 960px;
+  }
+  
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .grid-cols-4 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .hide-md {
+    display: block;
+  }
+  
+  .show-md {
+    display: none;
+  }
+  
+  .hide-lg {
+    display: none;
+  }
+  
+  .show-lg {
+    display: block;
+  }
+}
+
+/* Extra large devices (1200px and up) */
+@media (min-width: 1200px) {
+  :root {
+    --container-padding: 2rem;
+    --section-spacing: 6rem;
+    --grid-gap: 2.5rem;
+  }
+  
+  .container {
+    max-width: 1140px;
+  }
+  
+  .grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .hide-lg {
+    display: block;
+  }
+  
+  .show-lg {
+    display: none;
+  }
+  
+  .hide-xl {
+    display: none;
+  }
+  
+  .show-xl {
+    display: block;
+  }
+}
+
+/* Extra extra large devices (1400px and up) */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+/* Responsive Flex Utilities */
+.flex-column-xs {
+  flex-direction: column;
+}
+
+@media (min-width: 576px) {
+  .flex-row-sm {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .flex-row-md {
+    flex-direction: row;
+  }
+}
+
+/* Responsive Order Utilities */
+.order-first-xs {
+  order: -1;
+}
+
+.order-last-xs {
+  order: 999;
+}
+
+@media (min-width: 576px) {
+  .order-first-sm {
+    order: -1;
+  }
+  
+  .order-last-sm {
+    order: 999;
+  }
+  
+  .order-normal-sm {
+    order: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .order-first-md {
+    order: -1;
+  }
+  
+  .order-last-md {
+    order: 999;
+  }
+  
+  .order-normal-md {
+    order: 0;
+  }
+}
+
+/* Responsive Margin and Padding */
+.mt-auto-md {
+  margin-top: 0;
+}
+
+.mb-auto-md {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .mt-auto-md {
+    margin-top: auto;
+  }
+  
+  .mb-auto-md {
+    margin-bottom: auto;
+  }
+}
+
+/* Responsive Text Alignment */
+.text-center-xs {
+  text-align: center;
+}
+
+.text-left-xs {
+  text-align: left;
+}
+
+.text-right-xs {
+  text-align: right;
+}
+
+@media (min-width: 576px) {
+  .text-center-sm {
+    text-align: center;
+  }
+  
+  .text-left-sm {
+    text-align: left;
+  }
+  
+  .text-right-sm {
+    text-align: right;
+  }
+}
+
+@media (min-width: 768px) {
+  .text-center-md {
+    text-align: center;
+  }
+  
+  .text-left-md {
+    text-align: left;
+  }
+  
+  .text-right-md {
+    text-align: right;
+  }
+}

@@ -1,0 +1,150 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c3e50" />
+      <stop offset="100%" stop-color="#1a1a2e" />
+    </linearGradient>
+    
+    <!-- Blueprint grid pattern -->
+    <pattern id="blueprint-grid" patternUnits="userSpaceOnUse" width="100" height="100">
+      <rect width="100" height="100" fill="none" stroke="#4a6b8a" stroke-width="0.5" opacity="0.2" />
+      <line x1="0" y1="25" x2="100" y2="25" stroke="#4a6b8a" stroke-width="0.3" opacity="0.1" />
+      <line x1="0" y1="50" x2="100" y2="50" stroke="#4a6b8a" stroke-width="0.3" opacity="0.1" />
+      <line x1="0" y1="75" x2="100" y2="75" stroke="#4a6b8a" stroke-width="0.3" opacity="0.1" />
+      <line x1="25" y1="0" x2="25" y2="100" stroke="#4a6b8a" stroke-width="0.3" opacity="0.1" />
+      <line x1="50" y1="0" x2="50" y2="100" stroke="#4a6b8a" stroke-width="0.3" opacity="0.1" />
+      <line x1="75" y1="0" x2="75" y2="100" stroke="#4a6b8a" stroke-width="0.3" opacity="0.1" />
+    </pattern>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="1920" height="1080" fill="url(#bg-gradient)" />
+  
+  <!-- Blueprint grid overlay -->
+  <rect width="1920" height="1080" fill="url(#blueprint-grid)" />
+  
+  <!-- Modern building silhouettes -->
+  <!-- Building 1 -->
+  <rect x="200" y="300" width="200" height="780" fill="#34495e" opacity="0.8" />
+  <rect x="220" y="320" width="160" height="740" fill="#2c3e50" />
+  <!-- Windows pattern for Building 1 -->
+  <g>
+    <rect x="240" y="350" width="30" height="40" fill="#f1c40f" opacity="0.7" />
+    <rect x="280" y="350" width="30" height="40" fill="#f1c40f" opacity="0.3" />
+    <rect x="320" y="350" width="30" height="40" fill="#f1c40f" opacity="0.5" />
+    
+    <rect x="240" y="400" width="30" height="40" fill="#f1c40f" opacity="0.3" />
+    <rect x="280" y="400" width="30" height="40" fill="#f1c40f" opacity="0.7" />
+    <rect x="320" y="400" width="30" height="40" fill="#f1c40f" opacity="0.2" />
+    
+    <!-- Repeat pattern down the building -->
+    <rect x="240" y="450" width="30" height="40" fill="#f1c40f" opacity="0.5" />
+    <rect x="280" y="450" width="30" height="40" fill="#f1c40f" opacity="0.2" />
+    <rect x="320" y="450" width="30" height="40" fill="#f1c40f" opacity="0.7" />
+    
+    <rect x="240" y="500" width="30" height="40" fill="#f1c40f" opacity="0.2" />
+    <rect x="280" y="500" width="30" height="40" fill="#f1c40f" opacity="0.5" />
+    <rect x="320" y="500" width="30" height="40" fill="#f1c40f" opacity="0.3" />
+    
+    <rect x="240" y="550" width="30" height="40" fill="#f1c40f" opacity="0.7" />
+    <rect x="280" y="550" width="30" height="40" fill="#f1c40f" opacity="0.3" />
+    <rect x="320" y="550" width="30" height="40" fill="#f1c40f" opacity="0.5" />
+    
+    <rect x="240" y="600" width="30" height="40" fill="#f1c40f" opacity="0.3" />
+    <rect x="280" y="600" width="30" height="40" fill="#f1c40f" opacity="0.7" />
+    <rect x="320" y="600" width="30" height="40" fill="#f1c40f" opacity="0.2" />
+    
+    <rect x="240" y="650" width="30" height="40" fill="#f1c40f" opacity="0.5" />
+    <rect x="280" y="650" width="30" height="40" fill="#f1c40f" opacity="0.2" />
+    <rect x="320" y="650" width="30" height="40" fill="#f1c40f" opacity="0.7" />
+    
+    <rect x="240" y="700" width="30" height="40" fill="#f1c40f" opacity="0.2" />
+    <rect x="280" y="700" width="30" height="40" fill="#f1c40f" opacity="0.5" />
+    <rect x="320" y="700" width="30" height="40" fill="#f1c40f" opacity="0.3" />
+    
+    <rect x="240" y="750" width="30" height="40" fill="#f1c40f" opacity="0.7" />
+    <rect x="280" y="750" width="30" height="40" fill="#f1c40f" opacity="0.3" />
+    <rect x="320" y="750" width="30" height="40" fill="#f1c40f" opacity="0.5" />
+    
+    <rect x="240" y="800" width="30" height="40" fill="#f1c40f" opacity="0.3" />
+    <rect x="280" y="800" width="30" height="40" fill="#f1c40f" opacity="0.7" />
+    <rect x="320" y="800" width="30" height="40" fill="#f1c40f" opacity="0.2" />
+    
+    <rect x="240" y="850" width="30" height="40" fill="#f1c40f" opacity="0.5" />
+    <rect x="280" y="850" width="30" height="40" fill="#f1c40f" opacity="0.2" />
+    <rect x="320" y="850" width="30" height="40" fill="#f1c40f" opacity="0.7" />
+    
+    <rect x="240" y="900" width="30" height="40" fill="#f1c40f" opacity="0.2" />
+    <rect x="280" y="900" width="30" height="40" fill="#f1c40f" opacity="0.5" />
+    <rect x="320" y="900" width="30" height="40" fill="#f1c40f" opacity="0.3" />
+    
+    <rect x="240" y="950" width="30" height="40" fill="#f1c40f" opacity="0.7" />
+    <rect x="280" y="950" width="30" height="40" fill="#f1c40f" opacity="0.3" />
+    <rect x="320" y="950" width="30" height="40" fill="#f1c40f" opacity="0.5" />
+  </g>
+  
+  <!-- Building 2 (Glass tower) -->
+  <rect x="500" y="400" width="300" height="680" fill="#3498db" opacity="0.3" />
+  <!-- Glass panels -->
+  <g opacity="0.7">
+    <rect x="510" y="410" width="280" height="30" fill="#2980b9" />
+    <rect x="510" y="450" width="280" height="30" fill="#2980b9" />
+    <rect x="510" y="490" width="280" height="30" fill="#2980b9" />
+    <rect x="510" y="530" width="280" height="30" fill="#2980b9" />
+    <rect x="510" y="570" width="280" height="30" fill="#2980b9" />
+    <rect x="510" y="610" width="280" height="30" fill="#2980b9" />
+    <rect x="510" y="650" width="280" height="30" fill="#2980b9" />
+    <rect x="510" y="690" width="280" height="30" fill="#2980b9" />
+    <rect x="510" y="730" width="280" height="30" fill="#2980b9" />
+    <rect x="510" y="770" width="280" height="30" fill="#2980b9" />
+    <rect x="510" y="810" width="280" height="30" fill="#2980b9" />
+    <rect x="510" y="850" width="280" height="30" fill="#2980b9" />
+    <rect x="510" y="890" width="280" height="30" fill="#2980b9" />
+    <rect x="510" y="930" width="280" height="30" fill="#2980b9" />
+    <rect x="510" y="970" width="280" height="30" fill="#2980b9" />
+    <rect x="510" y="1010" width="280" height="30" fill="#2980b9" />
+    <rect x="510" y="1050" width="280" height="30" fill="#2980b9" />
+  </g>
+  
+  <!-- Building 3 (Modern skyscraper) -->
+  <polygon points="900,200 1100,200 1150,1080 850,1080" fill="#2c3e50" opacity="0.9" />
+  <!-- Vertical lines for architectural detail -->
+  <line x1="920" y1="200" x2="870" y2="1080" stroke="#e74c3c" stroke-width="2" opacity="0.7" />
+  <line x1="950" y1="200" x2="900" y2="1080" stroke="#e74c3c" stroke-width="2" opacity="0.7" />
+  <line x1="980" y1="200" x2="930" y2="1080" stroke="#e74c3c" stroke-width="2" opacity="0.7" />
+  <line x1="1010" y1="200" x2="960" y2="1080" stroke="#e74c3c" stroke-width="2" opacity="0.7" />
+  <line x1="1040" y1="200" x2="990" y2="1080" stroke="#e74c3c" stroke-width="2" opacity="0.7" />
+  <line x1="1070" y1="200" x2="1020" y2="1080" stroke="#e74c3c" stroke-width="2" opacity="0.7" />
+  
+  <!-- Building 4 (Futuristic design) -->
+  <rect x="1250" y="350" width="400" height="730" fill="#8e44ad" opacity="0.6" />
+  <ellipse cx="1450" cy="350" rx="200" ry="50" fill="#8e44ad" opacity="0.6" />
+  <!-- Decorative elements -->
+  <rect x="1300" y="400" width="300" height="20" fill="#ecf0f1" opacity="0.8" />
+  <rect x="1300" y="450" width="300" height="20" fill="#ecf0f1" opacity="0.8" />
+  <rect x="1300" y="500" width="300" height="20" fill="#ecf0f1" opacity="0.8" />
+  <rect x="1300" y="550" width="300" height="20" fill="#ecf0f1" opacity="0.8" />
+  <rect x="1300" y="600" width="300" height="20" fill="#ecf0f1" opacity="0.8" />
+  <rect x="1300" y="650" width="300" height="20" fill="#ecf0f1" opacity="0.8" />
+  <rect x="1300" y="700" width="300" height="20" fill="#ecf0f1" opacity="0.8" />
+  <rect x="1300" y="750" width="300" height="20" fill="#ecf0f1" opacity="0.8" />
+  <rect x="1300" y="800" width="300" height="20" fill="#ecf0f1" opacity="0.8" />
+  <rect x="1300" y="850" width="300" height="20" fill="#ecf0f1" opacity="0.8" />
+  <rect x="1300" y="900" width="300" height="20" fill="#ecf0f1" opacity="0.8" />
+  <rect x="1300" y="950" width="300" height="20" fill="#ecf0f1" opacity="0.8" />
+  <rect x="1300" y="1000" width="300" height="20" fill="#ecf0f1" opacity="0.8" />
+  
+  <!-- Overlay gradient for text readability -->
+  <rect width="1920" height="1080" fill="url(#bg-gradient)" opacity="0.3" />
+  
+  <!-- Construction crane silhouette -->
+  <g transform="translate(1700, 250) scale(0.7)">
+    <line x1="0" y1="0" x2="0" y2="500" stroke="#e67e22" stroke-width="15" />
+    <line x1="0" y1="50" x2="250" y2="50" stroke="#e67e22" stroke-width="10" />
+    <line x1="0" y1="100" x2="50" y2="50" stroke="#e67e22" stroke-width="8" />
+    <line x1="0" y1="150" x2="100" y2="50" stroke="#e67e22" stroke-width="8" />
+    <line x1="0" y1="200" x2="150" y2="50" stroke="#e67e22" stroke-width="8" />
+    <line x1="0" y1="250" x2="200" y2="50" stroke="#e67e22" stroke-width="8" />
+  </g>
+</svg>
