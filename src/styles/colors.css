@@ -29,4 +29,42 @@
   --border-dark: var(--primary-black);
   --border-light: var(--secondary-gray-light);
   --border-accent: var(--primary-orange);
+
+  /* Theme Variables (Static - No Theme Switching) */
+  --theme-bg-primary: var(--primary-white);
+  --theme-bg-secondary: var(--secondary-gray-light);
+  --theme-bg-accent: #F8F8F8;
+  --theme-bg-elevated: var(--primary-white);
+  --theme-text-primary: var(--secondary-gray-dark);
+  --theme-text-secondary: var(--secondary-gray-medium);
+  --theme-text-accent: var(--primary-orange);
+  --theme-text-inverted: var(--primary-white);
+  --theme-border-light: #E0E0E0;
+  --theme-border-medium: #CCCCCC;
+  --theme-border-dark: var(--secondary-gray-dark);
+  --theme-button-bg: var(--primary-orange);
+  --theme-button-text: var(--primary-white);
+  --theme-button-hover-bg: var(--secondary-orange-light);
+  --theme-button-active-bg: var(--secondary-orange-dark);
+  --theme-input-bg: var(--primary-white);
+  --theme-input-border: var(--theme-border-medium);
+  --theme-input-text: var(--theme-text-primary);
+  --theme-shadow-color: rgba(0, 0, 0, 0.1);
+  --theme-shadow-sm: 0 1px 3px var(--theme-shadow-color);
+  --theme-shadow-md: 0 4px 6px var(--theme-shadow-color);
+  --theme-shadow-lg: 0 10px 15px var(--theme-shadow-color);
+  --theme-shadow-xl: 0 20px 25px var(--theme-shadow-color);
+  --theme-overlay-bg: rgba(0, 0, 0, 0.5);
+  --theme-focus-ring: 0 0 0 2px var(--primary-orange);
+  --theme-transition-properties: background-color, color, border-color, box-shadow;
+  --theme-transition-duration: 0.3s;
+  --theme-transition-duration-fast: 0.15s;
+  --theme-transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+  --theme-border-radius-lg: 8px;
+  --theme-accent: var(--primary-orange);
+  --theme-text-accent-dark: var(--secondary-orange-dark);
+  --theme-bg-accent-light: #FAFAFA;
+  --theme-bg-accent-dark: #E8E8E8;
+  --theme-text-white: var(--primary-white);
+  --theme-border-color: var(--theme-border-medium);
 }
