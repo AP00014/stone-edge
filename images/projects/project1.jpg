@@ -1,0 +1,6 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#3a4a5c"/>
+  <text x="400" y="300" font-family="Arial" font-size="32" fill="white" text-anchor="middle">Modern Office Building</text>
+  <rect x="200" y="350" width="400" height="150" fill="#f97316" opacity="0.8"/>
+  <polygon points="300,200 500,200 600,350 200,350" fill="#f97316" opacity="0.6"/>
+</svg>
