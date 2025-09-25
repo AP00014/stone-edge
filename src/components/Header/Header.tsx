@@ -48,6 +48,17 @@ const Header = () => {
     setIsMobileMenuOpen(false);
   };
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+    closeMobileMenu();
+  };
+
   return (
     <header className={`header ${isScrolled ? 'header-scrolled' : ''}`}>
       <div className="container">
@@ -61,29 +72,29 @@ const Header = () => {
           <nav className={`nav-menu ${isMobileMenuOpen ? 'active' : ''}`} ref={navMenuRef}>
            
             <ul className="nav-list">
-              <li className="nav-item">
-                <Link to="/" className="nav-link" onClick={() => { closeMobileMenu(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Home</Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/#about" className="nav-link" onClick={() => { closeMobileMenu(); }}>About Us</Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/#services" className="nav-link" onClick={() => { closeMobileMenu(); }}>Services</Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/projects" className={`nav-link ${location.pathname.includes('/projects') ? 'active' : ''}`} onClick={() => { closeMobileMenu(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Projects</Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/#testimonials" className="nav-link" onClick={() => { closeMobileMenu(); }}>Testimonials</Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/#contact" className="nav-link" onClick={() => { closeMobileMenu(); }}>Contact</Link>
-              </li>
-            </ul>
+               <li className="nav-item">
+                 <button className="nav-link" onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); closeMobileMenu(); }}>Home</button>
+               </li>
+               <li className="nav-item">
+                 <button className="nav-link" onClick={() => scrollToSection('about')}>About Us</button>
+               </li>
+               <li className="nav-item">
+                 <button className="nav-link" onClick={() => scrollToSection('services')}>Services</button>
+               </li>
+               <li className="nav-item">
+                 <Link to="/projects" className={`nav-link ${location.pathname.includes('/projects') ? 'active' : ''}`} onClick={() => { closeMobileMenu(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Projects</Link>
+               </li>
+               <li className="nav-item">
+                 <button className="nav-link" onClick={() => scrollToSection('testimonials')}>Testimonials</button>
+               </li>
+               <li className="nav-item">
+                 <button className="nav-link" onClick={() => scrollToSection('contact')}>Contact</button>
+               </li>
+             </ul>
           </nav>
 
           <div className="header-cta">
-            <Link to="/#contact" className="btn btn-outline">Get a Quote</Link>
+            <button className="btn btn-outline" onClick={() => scrollToSection('contact')}>Get a Quote</button>
           </div>
 
           <div className="mobile-menu-toggle" onClick={toggleMobileMenu} ref={toggleButtonRef}>
