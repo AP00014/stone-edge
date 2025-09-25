@@ -188,7 +188,7 @@ body.dark-theme .nav-link {
 
 /* Header CTA - Compact */
 .header-cta {
-  display: flex;
+  display: flex; 
   align-items: center;
   gap: 1rem;
   z-index: 1001;
@@ -197,6 +197,7 @@ body.dark-theme .nav-link {
 .header-cta .btn {
   padding: 0.4rem 1rem;
   font-size: 0.8rem;
+  color: #FFFFFF;
 }
 
 .btn-outline {
