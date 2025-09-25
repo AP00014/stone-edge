@@ -65,19 +65,19 @@ const Header = () => {
                 <Link to="/" className="nav-link" onClick={() => { closeMobileMenu(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Home</Link>
               </li>
               <li className="nav-item">
-                <button className="nav-link" onClick={() => { window.location.href = '/#about'; closeMobileMenu(); }}>About Us</button>
+                <Link to="/#about" className="nav-link" onClick={() => { closeMobileMenu(); }}>About Us</Link>
               </li>
               <li className="nav-item">
-                <button className="nav-link" onClick={() => { window.location.href = '/#services'; closeMobileMenu(); }}>Services</button>
+                <Link to="/#services" className="nav-link" onClick={() => { closeMobileMenu(); }}>Services</Link>
               </li>
               <li className="nav-item">
                 <Link to="/projects" className={`nav-link ${location.pathname.includes('/projects') ? 'active' : ''}`} onClick={() => { closeMobileMenu(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Projects</Link>
               </li>
               <li className="nav-item">
-                <button className="nav-link" onClick={() => { window.location.href = '/#testimonials'; closeMobileMenu(); }}>Testimonials</button>
+                <Link to="/#testimonials" className="nav-link" onClick={() => { closeMobileMenu(); }}>Testimonials</Link>
               </li>
               <li className="nav-item">
-                <button className="nav-link" onClick={() => { window.location.href = '/#contact'; closeMobileMenu(); }}>Contact</button>
+                <Link to="/#contact" className="nav-link" onClick={() => { closeMobileMenu(); }}>Contact</Link>
               </li>
             </ul>
           </nav>
