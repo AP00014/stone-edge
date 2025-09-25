@@ -38,6 +38,26 @@ function App() {
               <Contact />
             </Layout>
           } />
+          <Route path="/about" element={
+            <Layout>
+              <About />
+            </Layout>
+          } />
+          <Route path="/services" element={
+            <Layout>
+              <Services />
+            </Layout>
+          } />
+          <Route path="/testimonials" element={
+            <Layout>
+              <Testimonials />
+            </Layout>
+          } />
+          <Route path="/contact" element={
+            <Layout>
+              <Contact />
+            </Layout>
+          } />
           <Route path="/projects" element={
             <Layout>
               <Projects />
