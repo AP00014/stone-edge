@@ -1,9 +1,14 @@
-@import '../../styles/colors.css';
-@import '../../styles/typography.css';
-@import '../../styles/animations.css';
+@import "../../styles/colors.css";
+@import "../../styles/typography.css";
+@import "../../styles/animations.css";
 
 .testimonials {
-  background: linear-gradient(135deg, var(--theme-bg-secondary) 0%, var(--theme-bg-accent) 50%, var(--theme-bg-primary) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--theme-bg-secondary) 0%,
+    var(--theme-bg-accent) 50%,
+    var(--theme-bg-primary) 100%
+  );
   padding: 5rem 0;
   position: relative;
   overflow: hidden;
@@ -11,20 +16,29 @@
 }
 
 .testimonials::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, rgba(255, 107, 0, 0.03) 0%, rgba(255, 138, 61, 0.02) 50%, rgba(217, 90, 0, 0.03) 100%);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 107, 0, 0.03) 0%,
+    rgba(255, 138, 61, 0.02) 50%,
+    rgba(217, 90, 0, 0.03) 100%
+  );
   pointer-events: none;
   animation: subtleShift 8s ease-in-out infinite alternate;
 }
 
 @keyframes subtleShift {
-  0% { opacity: 0.8; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .testimonials-subtitle {
@@ -35,7 +49,11 @@
 }
 
 .section-title {
-  background: linear-gradient(135deg, var(--theme-text-primary), var(--theme-text-accent));
+  background: linear-gradient(
+    135deg,
+    var(--theme-text-primary),
+    var(--theme-text-accent)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -83,13 +101,12 @@
   padding: 2.5rem;
   max-width: 700px;
   width: 100%;
-  box-shadow:
-    0 20px 40px rgba(0, 0, 0, 0.15),
-    0 0 0 1px rgba(255, 255, 255, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(255, 255, 255, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2);
   transition: transform var(--duration-normal) var(--ease-out),
-              box-shadow var(--duration-normal) var(--ease-out),
-              var(--theme-transition-properties) var(--theme-transition-duration) var(--theme-transition-timing);
+    box-shadow var(--duration-normal) var(--ease-out),
+    var(--theme-transition-properties) var(--theme-transition-duration)
+      var(--theme-transition-timing);
   animation: slideIn 0.8s ease-out;
   position: relative;
   overflow: hidden;
@@ -134,7 +151,7 @@
 .testimonial-name {
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-semibold);
-  color: rgba(45, 45, 45, 0.95);
+  color: var(--theme-text-primary);
   margin-bottom: 0.25rem;
 }
 
@@ -147,7 +164,7 @@
 
 .testimonial-company {
   font-size: var(--font-size-sm);
-  color: rgba(45, 45, 45, 0.8);
+  color: var(--theme-text-secondary);
   margin-bottom: 0.75rem;
 }
 
@@ -173,7 +190,7 @@
 .testimonial-quote {
   font-size: var(--font-size-md);
   line-height: var(--line-height-relaxed);
-  color: rgba(45, 45, 45, 0.9);
+  color: var(--theme-text-primary);
   font-style: italic;
   margin: 0;
   position: relative;
@@ -251,13 +268,18 @@
 }
 
 .testimonials-cta {
-  background: linear-gradient(135deg, var(--theme-button-bg), var(--theme-button-active-bg));
+  background: linear-gradient(
+    135deg,
+    var(--theme-button-bg),
+    var(--theme-button-active-bg)
+  );
   border-radius: var(--radius-md);
   padding: 3rem;
   text-align: center;
   color: var(--theme-text-inverted);
   margin-top: 4rem;
-  transition: var(--theme-transition-properties) var(--theme-transition-duration) var(--theme-transition-timing);
+  transition: var(--theme-transition-properties)
+    var(--theme-transition-duration) var(--theme-transition-timing);
   animation: fadeInUp 1s ease-out 0.3s both;
 }
 
@@ -277,7 +299,8 @@
 .testimonials-cta .btn {
   background-color: var(--theme-bg-primary);
   color: var(--theme-text-accent);
-  transition: var(--theme-transition-properties) var(--theme-transition-duration) var(--theme-transition-timing);
+  transition: var(--theme-transition-properties)
+    var(--theme-transition-duration) var(--theme-transition-timing);
 }
 
 .testimonials-cta .btn:hover {
@@ -317,7 +340,7 @@
   .testimonials-subtitle {
     margin-bottom: 3rem;
     font-size: clamp(1rem, 3.5vw, 1.1rem);
-    color: rgba(45, 45, 45, 0.8);
+    color: var(--theme-text-secondary);
   }
 
   .section-title {
@@ -356,7 +379,7 @@
 
   .testimonial-name {
     font-size: clamp(1.2rem, 4vw, 1.4rem);
-    color: rgba(45, 45, 45, 0.95);
+    color: var(--theme-text-primary);
   }
 
   .testimonial-position {
@@ -365,12 +388,12 @@
 
   .testimonial-company {
     font-size: clamp(0.85rem, 3vw, 0.95rem);
-    color: rgba(45, 45, 45, 0.8);
+    color: var(--theme-text-secondary);
   }
 
   .testimonial-quote {
     font-size: clamp(1rem, 3.5vw, 1.1rem);
-    color: rgba(45, 45, 45, 0.9);
+    color: var(--theme-text-primary);
   }
 
   .testimonial-quote::before {
@@ -399,9 +422,11 @@
   .testimonials-cta {
     padding: 2rem;
     margin-top: 3rem;
-    background: linear-gradient(135deg,
+    background: linear-gradient(
+      135deg,
       var(--primary-orange) 0%,
-      var(--secondary-orange-light) 100%);
+      var(--secondary-orange-light) 100%
+    );
     border-radius: 20px;
     box-shadow: 0 15px 35px rgba(255, 107, 0, 0.3);
   }
@@ -440,7 +465,7 @@
 
   .testimonial-quote {
     font-size: clamp(0.9rem, 3.5vw, 1rem);
-    color: rgba(45, 45, 45, 0.9);
+    color: var(--theme-text-primary);
   }
 
   .testimonial-name {

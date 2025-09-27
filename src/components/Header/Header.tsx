@@ -2,6 +2,7 @@
               import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
 import logo from '../../assets/IMG-20250623-WA0014.jpg';
+import ThemeToggle from '../ThemeToggle/ThemeToggle';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -60,30 +61,37 @@ const Header = () => {
           </div>
 
           <nav className={`nav-menu ${isMobileMenuOpen ? 'active' : ''}`} ref={navMenuRef}>
-           
-            <ul className="nav-list">
-               <li className="nav-item">
-                 <Link to="/" className="nav-link" onClick={() => { closeMobileMenu(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Home</Link>
-               </li>
-               <li className="nav-item">
-                 <Link to="/about" className={`nav-link ${location.pathname === '/about' ? 'active' : ''}`} onClick={() => { closeMobileMenu(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>About Us</Link>
-               </li>
-               <li className="nav-item">
-                 <Link to="/services" className={`nav-link ${location.pathname === '/services' ? 'active' : ''}`} onClick={() => { closeMobileMenu(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Services</Link>
-               </li>
-               <li className="nav-item">
-                 <Link to="/projects" className={`nav-link ${location.pathname.includes('/projects') ? 'active' : ''}`} onClick={() => { closeMobileMenu(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Projects</Link>
-               </li>
-               <li className="nav-item">
-                 <Link to="/testimonials" className={`nav-link ${location.pathname === '/testimonials' ? 'active' : ''}`} onClick={() => { closeMobileMenu(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Testimonials</Link>
-               </li>
-               <li className="nav-item">
-                 <Link to="/contact" className={`nav-link ${location.pathname === '/contact' ? 'active' : ''}`} onClick={() => { closeMobileMenu(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Contact</Link>
-               </li>
-             </ul>
-          </nav>
+
+             <ul className="nav-list">
+                <li className="nav-item">
+                  <Link to="/" className="nav-link" onClick={() => { closeMobileMenu(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Home</Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/about" className={`nav-link ${location.pathname === '/about' ? 'active' : ''}`} onClick={() => { closeMobileMenu(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>About Us</Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/services" className={`nav-link ${location.pathname === '/services' ? 'active' : ''}`} onClick={() => { closeMobileMenu(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Services</Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/projects" className={`nav-link ${location.pathname.includes('/projects') ? 'active' : ''}`} onClick={() => { closeMobileMenu(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Projects</Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/testimonials" className={`nav-link ${location.pathname === '/testimonials' ? 'active' : ''}`} onClick={() => { closeMobileMenu(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Testimonials</Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/contact" className={`nav-link ${location.pathname === '/contact' ? 'active' : ''}`} onClick={() => { closeMobileMenu(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Contact</Link>
+                </li>
+                <li className="nav-item theme-toggle-mobile">
+                  <div className="theme-toggle-wrapper">
+                    <span className="theme-toggle-label">Theme</span>
+                    <ThemeToggle />
+                  </div>
+                </li>
+              </ul>
+           </nav>
 
           <div className="header-cta">
+            <ThemeToggle />
             <Link to="/contact" className="btn btn-outline">Get a Quote</Link>
           </div>
 

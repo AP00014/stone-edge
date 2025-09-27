@@ -131,7 +131,7 @@
 
 .contact-value {
   font-size: 1rem;
-  color: rgba(45, 45, 45, 0.95);
+  color: var(--theme-text-primary);
   font-weight: 500;
   line-height: 1.4;
 }
@@ -336,7 +336,7 @@
 
   .contact-info p {
     font-size: clamp(1rem, 3.5vw, 1.1rem);
-    color: rgba(45, 45, 45, 0.9);
+    color: var(--theme-text-secondary);
   }
 
   .contact-form {
@@ -354,7 +354,7 @@
 
   .social-media h4 {
     font-size: clamp(1.1rem, 4vw, 1.3rem);
-    color: rgba(45, 45, 45, 0.95);
+    color: var(--theme-text-primary);
   }
 
   .social-icons {
