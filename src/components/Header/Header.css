@@ -646,6 +646,12 @@
   padding: 1.5rem 0 !important;
 }
 
+@media (min-width: 769px) {
+  .theme-toggle-mobile {
+    display: none;
+  }
+}
+
 .theme-toggle-wrapper {
   display: flex;
   align-items: center;
